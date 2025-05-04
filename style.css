@@ -92,7 +92,7 @@ h2 {
     height: 4px;
     background:
         linear-gradient(#007BFF, #007BFF) top,
-        linear-gradient(#007BFF, #007BFF) center,
+        linear-gradient(#050505, #000000) center,
         linear-gradient(#007BFF, #007BFF) bottom;
     background-repeat: no-repeat;
     background-size: 100% 5px;
