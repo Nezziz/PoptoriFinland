@@ -1,6 +1,7 @@
 /* Yleiset asetukset */
 body {
     margin: 0;
+    margin-left: 45px;
     font-family: Arial, sans-serif;
     background-color: #d1c8ff;
     padding-top: 40px; /* Lisää yläreunasta tyhjää tilaa, jotta yläpalkki ei peitä sisältöä */
