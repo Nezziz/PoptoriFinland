@@ -16,12 +16,26 @@ header {
     z-index: 1;
 }
 h1 {
-    color: rgb(29, 4, 113);
-    font-size: 48px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    text-transform: uppercase;
-}
+        font-family: 'Arial Black', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        background: repeating-linear-gradient(
+          to bottom,
+          #000,
+          #000 7px,
+          white 7px,
+          white 10px
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+      }
+      body {
+        background: white;
+        padding: 50px;
+        text-align: center;
+      }
+
 
 h2 {
     color: navy;
