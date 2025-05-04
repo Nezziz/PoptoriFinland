@@ -15,16 +15,20 @@ header {
     position: relative;
     z-index: 1;
 }
-h1{
-    color: blue;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif ;
+h1 {
+    color: darkgreen;
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
 }
 
 h2 {
-    color:chartreuse;
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: navy;
+    font-size: 32px;
+    font-style: italic;
+    text-align: left;
+    font-family: 'Verdana', sans-serif;
 }
 
 .logo {
