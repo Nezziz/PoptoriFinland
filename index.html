@@ -1,14 +1,29 @@
 <!DOCTYPE html> <!-- määrittää documentin tyypin nyt HTML5-->
-<html><!--root elementti jonka sisään kaikki koodi tulee-->
-<head> <!--head määrittelee metatiedot ei näy sivustolla-->
+<html lang="fi"><!--root elementti jonka sisään kaikki koodi tulee-->
+<head>
+    <meta charset="UTF-8"> <!--head määrittelee metatiedot ei näy sivustolla-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--skaalautuvuus kännykälle-->
     <title> Poptori Finland </title><!--määrittää selaimen välilehdessä näkyvän nimen-->
-    <link rel="stylesheet" href ="/PoptoriFinlad/style.css"> <!--linkittää tämän koodin käyttämmään kotisivujen styles--> 
+    <link rel="stylesheet" href ="/PoptoriFinland/style.css"> <!--linkittää tämän koodin käyttämmään kotisivujen styles--> 
 </head>
 <body><!--tähän tulee kaikki sivustolla näkyvä tieto-->
-
-    <h1>Moi mualima</h1>
-    <h2>TOimi nyt saatana</h2>
+<header>
     <div class="header-lines"></div>
-</body>  
+    <div class="logo">
+        <img src="logo.png" alt="Poptori Logo">
+        <h1>POPTORI Finland Oy</h1>
+        <div class="header-right">
+            <input type ="text" placeholder="Haku"><!--hakupalkki-->
+            <span class="Kirjaudu" >kirjaudu</span>
+        </div>
+
+    </div>
+</header>
+<main>
+    <h2>Tervetuloa</h2>
+    <p>Tämä on esimerkki kotisivuista jossa käytetään CSS.tyylejä</p>
+</main>
 <footer>Sivuston oikeudet omistaa Erkki Kristian Puumalainen</footer>  
+</body>  
+
 </html>
