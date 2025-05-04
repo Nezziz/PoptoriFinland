@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #d1c8ff;
-    padding-top: 90px; /* Lisää yläreunasta tyhjää tilaa, jotta yläpalkki ei peitä sisältöä */
+    padding-top: 40px; /* Lisää yläreunasta tyhjää tilaa, jotta yläpalkki ei peitä sisältöä */
 }
 
 /* Header-asettelu */
