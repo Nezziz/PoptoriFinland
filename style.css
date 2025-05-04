@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #e7aeae;
+    padding-top: 60px; /* Lisää yläreunasta tyhjää tilaa, jotta yläpalkki ei peitä sisältöä */
 }
 
 /* Header-asettelu */
@@ -10,32 +11,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: white;
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 1;
 }
-h1 {
-        font-family: 'Arial Black', sans-serif;
-        font-size: 24px;
-        font-weight: bold;
-        background: repeating-linear-gradient(
-          to bottom,
-          #000,
-          #000 7px,
-          white 7px,
-          white 10px
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: inline-block;
-      }
-      body {
-        background: white;
-        padding: 50px;
-        text-align: center;
-      }
 
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background: repeating-linear-gradient(
+        to bottom,
+        #000,
+        #000 7px,
+        white 7px,
+        white 10px
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 
 h2 {
     color: navy;
@@ -51,7 +48,7 @@ h2 {
 }
 
 .logo img {
-    height: 40px;
+    height: 50px;
     margin-right: 10px;
 }
 
@@ -113,5 +110,5 @@ footer {
     width: 100%;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 40px; /* Varmistaa, että footer ei mene sisällön päälle */
 }
