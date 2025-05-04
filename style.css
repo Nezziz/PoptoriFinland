@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #d1c8ff;
-    padding-top: 60px; /* Lisää yläreunasta tyhjää tilaa, jotta yläpalkki ei peitä sisältöä */
+    padding-top: 20px; /* Lisää yläreunasta tyhjää tilaa, jotta yläpalkki ei peitä sisältöä */
 }
 
 /* Header-asettelu */
@@ -109,6 +109,6 @@ footer {
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 12px;
     margin-top: 40px; /* Varmistaa, että footer ei mene sisällön päälle */
 }
