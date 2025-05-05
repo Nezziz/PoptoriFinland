@@ -52,6 +52,7 @@ h2 {
 }
 
 .logo img {
+    display: flex;
     height: 50px;
     margin-right: 0;
 }
