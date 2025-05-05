@@ -133,3 +133,23 @@ footer {
     margin-top: 20px; /* Tämä on hyvä, jotta se ei mene päälle */
     padding-bottom: 40px; /* Lisää tilaa, ettei footer mene päälle */
 }
+/* Responsiivinen asettelu pienille näytöille */
+@media (max-width: 768px) {
+    body {
+        padding: 0 8px; /* Vähennetään sivujen väliä pienillä näytöillä */
+    }
+
+    header {
+        flex-direction: column; /* Headerin elementit voivat mennä pinoon pienillä näytöillä */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Linkit voivat mennä päällekkäin */
+        gap: 10px; /* Lisää tilaa linkkien väliin */
+    }
+
+    .header-right {
+        margin-left: 0;
+        padding-right: 0;
+    }
+}
