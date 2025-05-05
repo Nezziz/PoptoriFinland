@@ -167,3 +167,27 @@ footer {
         padding-right: 0;
     }
 }
+
+.carousel-container {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.carousel {
+    display: inline-flex;
+}
+
+.movie {
+    margin-right: 15px;
+    flex-shrink: 0; /* Estää kuvia kutistumasta, kun tila loppuu */
+}
+
+.carousel img {
+    width: 75px;
+    height: 150px;
+    object-fit: cover; /* Pitää kuvasuhteen siistinä ilman venymistä */
+    border-radius: 8px;
+    display: block;
+}
