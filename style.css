@@ -1,13 +1,14 @@
 /* Yleiset asetukset */
 body {
-        margin: 0 auto; /* keskittää sisällön */
-        max-width: 1200px; /* tai esim. 960px */
-        padding: 0 16px; /* lisää tilaa sivureunoihin pienillä näytöillä */
-        font-family: Arial, sans-serif;
-        background-color: #d1c8ff;
-        padding-top: 120px;
-        display: block;
-    }
+    margin: 0 auto; /* Keskittää sisällön */
+    width: 100%; /* Täyttää koko leveydellä */
+    max-width: 1200px; /* Määrittää suurimman leveyden */
+    padding: 0 16px; /* Lisää tilaa pienillä näytöillä */
+    font-family: Arial, sans-serif;
+    background-color: #d1c8ff;
+    padding-top: 120px; /* Lisää tilaa ylhäältä, jotta header ei peitä sisältöä */
+    display: block;
+}
 
 /* Header-asettelu */
 header {
@@ -129,5 +130,6 @@ footer {
     width: 100%;
     text-align: center;
     padding: 12px;
-    margin-top: 20px; /* Varmistaa, että footer ei mene sisällön päälle */
+    margin-top: 20px; /* Tämä on hyvä, jotta se ei mene päälle */
+    padding-bottom: 40px; /* Lisää tilaa, ettei footer mene päälle */
 }
