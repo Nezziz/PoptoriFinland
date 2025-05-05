@@ -124,8 +124,8 @@ h2 {
 
 /* Kehys sisällölle */
 .content {
-    position: fixed;
-    top: 100px; /* jätä tilaa yläosalle */
+    position: relative;
+    margin-top: 120px; /* jätä tilaa yläosalle */
     left: 0;
     right: 0;
     bottom: 0; /* ulottuu näytön alaosaan asti */
@@ -133,7 +133,7 @@ h2 {
     padding: 20px;
     background-color: white;
     overflow-y: auto; /* mahdollistaa kehyksen sisäisen scrollauksen */
-    z-index: 1000;
+    z-index: 1;
 }
 
 footer {
