@@ -8,6 +8,7 @@ body {
     background-color: #d1c8ff;
     padding-top: 120px; /* Lisää tilaa ylhäältä, jotta header ei peitä sisältöä */
     display: block;
+    margin-left: -40px
 }
 
 /* Header-asettelu */
