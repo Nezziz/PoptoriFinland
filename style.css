@@ -125,17 +125,18 @@ h2 {
     background-color: white;
 }
 
-/* Footer-tyyli */
 footer {
-    background-color: #222;
-    color: white;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0; /* Lisätään tämä, jotta varmasti ulottuu oikeaan reunaan */
+    width: 100vw; /* Käytä viewportin koko leveyttä */
+    background-color: #222;
+    color: white;
     text-align: center;
     padding: 12px 0;
-    padding-bottom: 40px;
+    box-sizing: border-box;
+    z-index: 99; /* Varmistetaan että näkyy muiden alla mutta ei peity */
 }
 
 /* Responsiivinen asettelu pienille näytöille */
