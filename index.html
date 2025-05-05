@@ -1,40 +1,40 @@
-<!DOCTYPE html> <!-- määrittää documentin tyypin nyt HTML5-->
-<html lang="fi"><!--root elementti jonka sisään kaikki koodi tulee-->
+<!DOCTYPE html>
+<html lang="fi">
 <head>
-    <meta charset="UTF-8"> <!--head määrittelee metatiedot ei näy sivustolla-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--skaalautuvuus kännykälle-->
-    <title> Poptori Finland </title><!--määrittää selaimen välilehdessä näkyvän nimen-->
-    <link rel="stylesheet" href ="style.css"> <!--linkittää tämän koodin käyttämmään kotisivujen styles--> 
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poptori Finland</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body><!--tähän tulee kaikki sivustolla näkyvä tieto-->
-   
-    <header style="display: flex; align-items: center; padding: 10px 20px;">
-    <div class="header-lines"></div>
+<body>
 
-    <div class="logo" style="display: flex;align-items: center;gap: 10px;">
-        <img src="logo.png" alt="Poptori Logo">
-        <h1>POPTORI Finland Oy</h1>
-    </div>
+    <header>
+        <div class="header-lines"></div>
 
-        <div class="header-right">
-            <input type ="text" placeholder="Haku"><!--hakupalkki-->
-            <a class="kirjaudu" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dfi&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dfi&hl=fi&ifkv=ASKV5MieN6hfbSRxpdKotuKq2nAQxHeTLr1VzAjSdYzG1m1fI8ZAVxqzM5oTtzrf6dLK4b0Oi30K0A&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1848149293%3A1746429421935776">kirjaudu</a> <!--lisää linkki-->
+        <div class="logo">
+            <img src="logo.png" alt="Poptori Logo">
+            <h1>POPTORI Finland Oy</h1>
         </div>
 
-</header>
-<main>
-    <h2>Tervetuloa</h2>
-    
-    <p>Poptori Finland on BtoB jakeluorganisaatio, jonka tavoitteena on toimia linkkinä, kotimaisten tuottajien, sekä kaupan välillä. </p>
-    <p>Haluamme mahdollistaa, parhaan kykymme mukaan pientuottajien tuotteet jokaisen kaupan hyllylle.</p>
-    <p>Jakelu ei ole uusi asia, mutta me voimme hoitaa sen kustannustehokkaasti.</p>
-    <p>Palveluumme sisältyy myös halutessanne kotisivusuunnittelu, totetus, sekä julkaisu.</p>
+        <div class="header-right">
+            <input type="text" placeholder="Haku">
+            <a class="kirjaudu" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dfi&followup=https%3A%2F%2Ftakeout.google.com%2F%3Fhl%3Dfi&hl=fi&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Kirjaudu</a>
+        </div>
+    </header>
 
-    <h2>Don´t be stuck, Pop-Up in shop</h2>
+    <main class="content">
+        <h2>Tervetuloa</h2>
+        <p>Poptori Finland on BtoB-jakeluorganisaatio, jonka tavoitteena on toimia linkkinä kotimaisten tuottajien ja kaupan välillä.</p>
+        <p>Haluamme mahdollistaa pientuottajien tuotteiden pääsyn jokaisen kaupan hyllylle parhaalla mahdollisella tavalla.</p>
+        <p>Jakelu ei ole uusi asia, mutta me voimme hoitaa sen kustannustehokkaasti.</p>
+        <p>Palveluumme sisältyy halutessanne myös kotisivusuunnittelu, toteutus sekä julkaisu.</p>
 
-</main>
-<footer>Sivuston oikeudet omistaa Erkki Kristian Puumalainen</footer>  
-</body>  
+        <h2>Don’t be stuck, Pop-Up in shop</h2>
+    </main>
 
+    <footer>
+        Sivuston oikeudet omistaa Erkki Kristian Puumalainen
+    </footer>
+
+</body>
 </html>
