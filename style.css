@@ -118,7 +118,7 @@ h2 {
 /* Kehys sisällölle */
 .content {
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 0;
     width: 100%; /* voit säätää leveyden haluamaksesi */
     border: 2px solid #007BFF;
