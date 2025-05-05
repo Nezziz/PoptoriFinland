@@ -125,14 +125,15 @@ h2 {
 /* Kehys sisällölle */
 .content {
     position: fixed;
-    top: 100px;
+    top: 100px; /* jätä tilaa yläosalle */
     left: 0;
-    width: 100%; /* voit säätää leveyden haluamaksesi */
+    right: 0;
+    bottom: 0; /* ulottuu näytön alaosaan asti */
     border: 2px solid #007BFF;
-    margin: 0;
     padding: 20px;
     background-color: white;
-    z-index: 1000; /* pitää kehyksen muiden elementtien päällä */
+    overflow-y: auto; /* mahdollistaa kehyksen sisäisen scrollauksen */
+    z-index: 1000;
 }
 
 footer {
