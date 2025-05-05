@@ -1,6 +1,5 @@
 /* Yleiset asetukset */
 body {
-    body {
         margin: 0 auto; /* keskittää sisällön */
         max-width: 1200px; /* tai esim. 960px */
         padding: 0 16px; /* lisää tilaa sivureunoihin pienillä näytöillä */
@@ -8,7 +7,6 @@ body {
         background-color: #d1c8ff;
         padding-top: 40px;
     }
-}
 
 /* Header-asettelu */
 header {
