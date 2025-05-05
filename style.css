@@ -187,8 +187,8 @@ footer {
 }
 
 .carousel img {
-    width: 25px;
-    height: 50px;
+    width: 75px;
+    height: 87px;
     object-fit: cover; /* Pitää kuvasuhteen siistinä ilman venymistä */
     border-radius: 8px;
     display: block;
