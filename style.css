@@ -30,6 +30,7 @@ header {
     font-family: 'Arial Black', sans-serif;
     font-size: 24px;
     font-weight: bold;
+    color: #050505;
     background: repeating-linear-gradient(
         to bottom,
         #000 7px,
@@ -42,14 +43,9 @@ header {
     display: inline-block;
 }
 
-h1 {  color: navy;
-    font-size: 32px;
-    font-style: italic;
-    text-align: center;
-    font-family: 'Verdana', sans-serif;
-    padding-top: 100px;
 
-}
+
+
 h2 {
     color: navy;
     font-size: 32px;
