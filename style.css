@@ -24,6 +24,7 @@ header {
     top: 0;
     z-index: 100;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .logo h1 {
@@ -129,7 +130,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+
     text-align: center;
     padding: 12px;
     margin-top: 20px; /* Tämä on hyvä, jotta se ei mene päälle */
