@@ -117,10 +117,15 @@ h2 {
 
 /* Kehys sisällölle */
 .content {
-    border: 4px solid #007BFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* voit säätää leveyden haluamaksesi */
+    border: 2px solid #007BFF;
     margin: 0;
     padding: 20px;
     background-color: white;
+    z-index: 1000; /* pitää kehyksen muiden elementtien päällä */
 }
 
 footer {
