@@ -27,21 +27,11 @@ header {
 }
 
 .logo h1 {
-    position: fixed;
     font-family: 'Arial Black', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    color: #050505;
-    background: repeating-linear-gradient(
-        to bottom,
-        #000 7px,
-        #000 7px,
-        white 7px,
-        white 7px
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
+    color: #000; /* Musta teksti, näkyy vaalealla ja tummalla */
+    margin: 0;
 }
 
 
@@ -66,13 +56,11 @@ h2 {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
-.logo h1 {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-}
+
+
 .logo img {
     display: flex;
     height: 50px;
@@ -140,7 +128,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0; /* Lisätään tämä, jotta varmasti ulottuu oikeaan reunaan */
-    width: 100vw; /* Käytä viewportin koko leveyttä */
+    width: 40vw; /* Käytä viewportin osa leveyttä */
     background-color: #222;
     color: white;
     text-align: center;
