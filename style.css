@@ -49,10 +49,11 @@ header {
     margin: 0;
     padding: 10px 0;
     list-style: none;
+    flex-wrap: nowrap;
 }
 
 .navigointipalkki li {
-    flex: 1;
+    text-align: center;
     text-align: center;
 }
 
