@@ -5,7 +5,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: Arial, sans-serif;
-    background-image: url('"E:\GITHUBKoodit\PoptoriFinland\tausta.png"');
+    background-image: url("https://raw.githubusercontent.com/Nezziz/PoptoriFinland/main/Kuvat/TERAS.jpg"); /* käytä RAW-Linkkiä kuvissa*/
     padding-top: 120px;
     overflow-x: hidden;
     display: flex;
