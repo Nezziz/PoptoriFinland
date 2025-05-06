@@ -8,8 +8,13 @@ body {
     background-image: url('"E:\GITHUBKoodit\PoptoriFinland\tausta.png"');
     padding-top: 120px;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: vh;
 }
-
+main.content {
+    flex:1;
+}
 /* Header-asettelu (kiinteäylätunniste)*/
 header {
     display: flex;
@@ -132,7 +137,7 @@ footer {
     background-color: #222;
     color: white;
     text-align: center;
-    padding: 12px 0;
+    padding: 1px;
     box-sizing: border-box;
     z-index: 99; /* Varmistetaan että näkyy muiden alla mutta ei peity */
 }
