@@ -273,7 +273,7 @@ footer {
     }
 
     .navigointipalkki ul.active {
-        display: flex;
+        display:flex;
     }
 }
 
@@ -301,6 +301,7 @@ footer {
 }
 
 .carousel-container { /*vaakasuuntaisesti vieritettävä alue*/
+    position: fixed;
     width: 100%;
     margin-top: 20px;
     overflow-x: auto;
