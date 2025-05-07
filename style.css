@@ -167,7 +167,7 @@ h2 {
 /* Kehys sisällölle */
 .content {
     position: fixed;
-    margin-top: 0; /* jätä tilaa yläosalle */
+    margin-top: 5px; /* jätä tilaa yläosalle */
     left: 20px;
     right: 20px;
     bottom: 20px; /* ulottuu näytön alaosaan asti */
@@ -302,12 +302,12 @@ footer {
 }
 
 .carousel-container { /*vaakasuuntaisesti vieritettävä alue*/
-    position: relative;
+    position: fixed;
     width: 100%;
     margin-top: 20px;
     overflow-x: auto;
     white-space: nowrap;
-    scroll-snap-type:x mandatory;
+   
 }
 
 .carousel {
