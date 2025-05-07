@@ -30,12 +30,12 @@ header {
     align-items: center;
     padding: 10px;
     background-color: transparent;
-    position: fixed; /* kiinnitetty yläpalkki */
+    position: sticky; /* kiinnitetty yläpalkki */
     width: 100%;
     top: 0;
     z-index: 100; /* pysyy muiden elementtien päällä */
-    flex-wrap: wrap;
     box-sizing: border-box;
+    backdrop-filter: blur(10px);
 }
 
 /* ===========================
