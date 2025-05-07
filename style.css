@@ -46,7 +46,7 @@ header {
     position: sticky;
     top: 120px;
     z-index: 99;
-    border-bottom: 1px solid #ccc;
+
     padding: 0 30px; /* Lisää padding, jos puuttuu */
  
 }
