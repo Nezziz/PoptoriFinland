@@ -6,7 +6,7 @@ body {
     margin-right: auto;
     font-family: Arial, sans-serif;
     background-image: url("https://raw.githubusercontent.com/Nezziz/PoptoriFinland/main/Kuvat/TERAS.jpg"); /* käytä RAW-Linkkiä kuvissa*/
-    padding-top: 120px;
+    padding-top: 140px;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,7 @@ main.content {
 }
 /* Header-asettelu (kiinteä ylätunniste*/
 header {
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,13 +42,17 @@ header {
 .navigointipalkki {
     width: 100%;
     background-color: #333;
+    position: sticky;
+    top: 120px;
+    z-index: 99;
+    border-bottom: 1px solid #ccc;
 }
 
 .navigointipalkki ul {
     display: flex;
-    justify-content: space-evenly; /* Tasaiset välit */
+    justify-content: center;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     list-style: none;
     flex-wrap: nowrap;
 }
@@ -55,20 +60,20 @@ header {
 .navigointipalkki li {
     text-align: center;
     text-align: center;
+    margin: 0 15px;
 }
 
 .navigointipalkki a {
-    color: white;
     text-decoration: none;
+    color: #333;
     font-weight: bold;
+    padding: 12px 10;
     display: block;
-    width: 100%;
-    padding: 10px 0;
-    transition: color 0.3s;
 }
 
 .navigointipalkki a:hover {
     color: #ffcc00;
+    border-radius: 4px;
 }
 
 
