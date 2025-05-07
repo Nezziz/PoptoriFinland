@@ -16,7 +16,7 @@ main.content {
 }
 /* Header-asettelu (kiinteä ylätunniste*/
 header {
-  
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
