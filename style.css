@@ -30,7 +30,7 @@ header {
     align-items: center;
     padding: 10px;
     background-color: transparent;
-    position: sticky; /* kiinnitetty yläpalkki */
+    position: fixed; /* kiinnitetty yläpalkki */
     width: 100%;
     top: 0;
     z-index: 100; /* pysyy muiden elementtien päällä */
