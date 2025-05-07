@@ -8,12 +8,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-main.content {
 
-    margin-top: 120px;
-    padding-bottom: 100px;
-}
+    main.content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
 /* Header-asettelu (kiinteä ylätunniste*/
 header {
     height: 100px;
@@ -177,19 +179,15 @@ h2 {
     z-index: 1;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0; /* Lisätään tämä, jotta varmasti ulottuu oikeaan reunaan */
-    width: 100vw; /* Käytä viewportin osa leveyttä */
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 1px;
-    box-sizing: border-box;
-    z-index: 99; /* Varmistetaan että näkyy muiden alla mutta ei peity */
-}
+   
+    footer {
+        position: relative;
+        margin-top: auto;
+        text-align: center;
+        padding: 10px;
+        background-color: #222;
+        color: white;
+    }
 
 /* Responsiivinen asettelu pienille näytöille */
 
