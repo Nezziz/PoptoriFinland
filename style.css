@@ -34,7 +34,7 @@ header {
     font-family: 'Arial Black', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    color: #000; /* Musta teksti, näkyy vaalealla ja tummalla */
+    color: #ffffff; /* Musta teksti, näkyy vaalealla ja tummalla */
     margin: 0;
     text-align: center;
 
@@ -42,7 +42,7 @@ header {
 
 .navigointipalkki {
     width: 100%;
-    background-color: #333;
+
     position: sticky;
     top: 120px;
     z-index: 99;
