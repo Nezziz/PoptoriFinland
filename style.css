@@ -22,7 +22,7 @@ header {
     padding: 10px;
     background-color: transparent;
     position: fixed;
-    width: 80%;
+    width: 100%;
     top: 0;
     z-index: 100;
     flex-wrap: wrap;
