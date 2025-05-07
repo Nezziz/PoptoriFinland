@@ -46,6 +46,8 @@ header {
     top: 120px;
     z-index: 99;
     border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0; /* Lisää padding, jos puuttuu */
 }
 
 .navigointipalkki ul {
@@ -65,7 +67,8 @@ header {
 
 .navigointipalkki a {
     text-decoration: none;
-    color: #333;
+    color: #5215ec;
+    border: white;
     font-weight: bold;
     padding: 12px 10;
     display: block;
