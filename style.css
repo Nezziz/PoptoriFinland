@@ -14,6 +14,7 @@ body {
 }
 main.content {
     flex:1;
+    margin-top: 10px;
 }
 /* Header-asettelu (kiinteä ylätunniste*/
 header {
