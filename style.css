@@ -300,11 +300,17 @@ footer {
         width: 100%;
     }
 }
+.carousel .movie:first-child {
+    margin-left: 20px;
+}
 
-.carousel-container {
-    position: fixed;
-    top: 140px; /* Riittävästi tilaa headerin alle */
-    z-index: 2; /* Näkyy contentin ja headerin yläpuolella */
+carousel-container {
+    position: relative;
+    margin-top: 160px; /* riittävästi tilaa headerin ja navigointipalkin alle */
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .carousel {
