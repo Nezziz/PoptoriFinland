@@ -166,7 +166,7 @@ h2 {
 /* Kehys sisällölle */
 .content {
     position: fixed;
-    margin-top: 100px; /* jätä tilaa yläosalle */
+    margin-top: 110px; /* jätä tilaa yläosalle */
     left: 20px;
     right: 20px;
     bottom: 10px; /* ulottuu näytön alaosaan asti */
