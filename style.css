@@ -30,6 +30,7 @@ header {
     z-index: 100;
     flex-wrap: wrap;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .logo h1 { /*logoteksti*/
