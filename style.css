@@ -156,9 +156,9 @@ h2 {
 .content {
     position: fixed;
     margin-top: 140px; /* jätä tilaa yläosalle */
-    left: 0;
-    right: 0;
-    bottom: 0; /* ulottuu näytön alaosaan asti */
+    left: 20px;
+    right: 20px;
+    bottom: 10px; /* ulottuu näytön alaosaan asti */
     border: 4px solid #007BFF;
     padding: 20px;
     padding-bottom: 80px;
