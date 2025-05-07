@@ -301,13 +301,10 @@ footer {
     }
 }
 
-.carousel-container { /*vaakasuuntaisesti vieritettävä alue*/
+.carousel-container {
     position: fixed;
-    width: 100%;
-    margin-top: 20px;
-    overflow-x: auto;
-    white-space: nowrap;
-   
+    top: 140px; /* Riittävästi tilaa headerin alle */
+    z-index: 2; /* Näkyy contentin ja headerin yläpuolella */
 }
 
 .carousel {
