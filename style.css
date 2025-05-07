@@ -6,7 +6,7 @@ body {
     margin-right: auto;
     font-family: Arial, sans-serif;
     background-image: url("https://raw.githubusercontent.com/Nezziz/PoptoriFinland/main/Kuvat/TERAS.jpg"); /* käytä RAW-Linkkiä kuvissa*/
-    padding-top: 140px;
+    padding-top: 160px;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
