@@ -166,7 +166,7 @@ h3 {
    Karuselli (leffa/tuotekuvat)
    =========================== */
 .carousel-container {
-    position: relative;
+    position: fixed;
     margin-top: 40px; /* tilaa navigoinnin alle */
     overflow-x: auto;
     white-space: nowrap;
