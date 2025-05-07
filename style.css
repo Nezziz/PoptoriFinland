@@ -76,7 +76,9 @@ header {
     border-radius: 4px;
 }
 
-
+h1 {
+    text-align: center;
+}
 
 h3 {
     text-align: center;
