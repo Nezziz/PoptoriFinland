@@ -39,6 +39,8 @@ header {
     font-weight: bold;
     color: #000; /* Musta teksti, näkyy vaalealla ja tummalla */
     margin: 0;
+    text-align: center;
+
 }
 
 .navigointipalkki {
@@ -49,7 +51,7 @@ header {
     z-index: 99;
     border-bottom: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding: 10px 0; /* Lisää padding, jos puuttuu */
+    padding: 0 30; /* Lisää padding, jos puuttuu */
 }
 
 .navigointipalkki ul {
@@ -65,13 +67,13 @@ header {
 .navigointipalkki li {
     text-align: center;
     text-align: center;
-    margin: 0 15px;
+    margin: 5 15px;
 }
 
 .navigointipalkki a {
     text-decoration: none;
     color: #ffffff;
-    border: white;
+    border: #3a048c;
     font-weight: bold;
     padding: 12px 10;
     display: block;
