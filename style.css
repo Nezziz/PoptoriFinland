@@ -1,22 +1,28 @@
-/* Yleiset asetukset koko sivulle*/
-body {
+/* ===========================
+   Yleiset asetukset koko sivulle
+   =========================== */
+   body {
     margin: 0px;
     padding: 0 30px;
     font-family: Arial, sans-serif;
-    background-image: url("https://raw.githubusercontent.com/Nezziz/PoptoriFinland/main/Kuvat/TERAS.jpg"); /* käytä RAW-Linkkiä kuvissa*/
-    overflow-x: hidden;
-    display: flex;
+    background-image: url("https://raw.githubusercontent.com/Nezziz/PoptoriFinland/main/Kuvat/TERAS.jpg"); /* käytä RAW-Linkkiä kuvissa */
+    overflow-x: hidden; /* estää vaakasuuntaisen skrollauksen */
+    display: flex; /* mahdollistaa footerin alalaitaan */
     flex-direction: column;
     min-height: 100vh;
 }
-    main.content {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-/* Header-asettelu (kiinteä ylätunniste*/
+
+main.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* keskittää sisällön pystysuunnassa */
+}
+
+
+/* ===========================
+   Header-asettelu (kiinteä yläpalkki)
+   =========================== */
 header {
     height: 100px;
     display: flex;
@@ -24,34 +30,76 @@ header {
     align-items: center;
     padding: 10px;
     background-color: transparent;
-    position: fixed;
+    position: fixed; /* kiinnitetty yläpalkki */
     width: 100%;
     top: 0;
-    z-index: 100;
+    z-index: 100; /* pysyy muiden elementtien päällä */
     flex-wrap: wrap;
     box-sizing: border-box;
-   
 }
 
-.logo h1 { /*logoteksti*/
+/* ===========================
+   Logo + teksti headerissa
+   =========================== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* väli kuvan ja tekstin väliin */
+}
+
+.logo img {
+    height: 50px; /* logon korkeus */
+}
+
+.logo h1 {
     font-family: 'Arial Black', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    color: #ffffff; /* Musta teksti, näkyy vaalealla ja tummalla */
+    color: #ffffff;
     margin: 0;
     text-align: center;
-
 }
 
+/* ===========================
+   Hakupalkki ja kirjautuminen (header-oikea laita)
+   =========================== */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.header-right input[type="text"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.kirjaudu {
+    text-decoration: none;
+    color: #102f50;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #f5f7f8;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.kirjaudu:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* ===========================
+   Navigointipalkki (valikko)
+   =========================== */
 .navigointipalkki {
     width: 100%;
-
     position: sticky;
-    top: 120px;
+    top: 120px; /* sijoitus headerin alapuolelle */
     z-index: 99;
-
-    padding: 0 30px; /* Lisää padding, jos puuttuu */
- 
+    padding: 0 30px;
 }
 
 .navigointipalkki ul {
@@ -62,43 +110,31 @@ header {
     padding: 10;
     list-style: none;
     flex-wrap: wrap;
-   
 }
 
-.navigointipalkki li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    display: block;
-}
-
+.navigointipalkki li a,
 .navigointipalkki a {
     text-decoration: none;
     color: #ffffff;
-    border: #3a048c;
     font-weight: bold;
-    padding: 12px 10;
+    padding: 12px 10px;
     display: block;
+    border: #3a048c; /* ei näy ilman border-tyyliä */
 }
 
 .navigointipalkki li a:hover {
-    color: #3a048c;
-
+    color: #3a048c; /* hover-väri linkeille */
 }
 
+/* ===========================
+   Typografia (otsikot)
+   =========================== */
 h1 {
     font-family: 'Arial Black', sans-serif;
     font-size: clamp(20px, 5vw, 28px);
     margin: 0;
     color: #ffffff;
 }
-
-h3 {
-    text-align: center;
-
-}
-
 
 h2 {
     color: rgb(226, 226, 251);
@@ -109,65 +145,13 @@ h2 {
     padding-top: 100px;
 }
 
-.logo { /*Logo kuva asettelu*/
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-
+h3 {
+    text-align: center;
 }
 
-
-.logo img {/*Logo kuva*/
-   
-    height: 50px;
-   
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.header-right { /*kirjautumislinkki*/
-    
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-right: 30px;
-  
-}
-
-.header-right input[type="text"] { /*hakupalkki*/
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.kirjaudu { /*kirjautumis painike ja sen muotoilu*/
-    text-decoration: none;
-    color: #102f50;
-    font-weight: bold;
-    padding: 5px 10px;
-    border: 1px solid #f5f7f8;
-    border-radius: 4px;
-    background-color: white;
-    
-}
-
-.kirjaudu:hover { /* kirjautumis painikkeen Hower efekti?*/
-    background-color: #007BFF;
-    color: white;
-}
-
-
-/* Kehys sisällölle */
+/* ===========================
+   Kehys sisällölle (white box)
+   =========================== */
 .content {
     border: 4px solid #007BFF;
     margin-top: 120px;
@@ -178,29 +162,58 @@ h2 {
     z-index: 1;
 }
 
-   
-    footer {
-        position: relative;
-        margin-top: auto;
-        text-align: center;
-        padding: 10px;
-        background-color: #222;
-        color: white;
-    }
-
-/* Responsiivinen asettelu pienille näytöille */
-
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: 10px;
+/* ===========================
+   Karuselli (leffa/tuotekuvat)
+   =========================== */
+.carousel-container {
+    position: relative;
+    margin-top: 40px; /* tilaa navigoinnin alle */
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 20 0;
 }
 
+.carousel {
+    display: inline-flex;
+}
+
+.carousel .movie:first-child {
+    margin-left: 20px;
+}
+
+.movie {
+    margin-right: 15px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.carousel img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+footer {
+    position: relative;
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+}
+
+/* ===========================
+   Mobiiliresponsiivisuus
+   =========================== */
+
+/* Näytöt alle 1024px (esim. tabletit) */
 @media (max-width: 1024px) {
     .content {
         padding: 20px 40px;
@@ -212,6 +225,7 @@ h2 {
     }
 }
 
+/* Näytöt alle 768px (esim. kännykät) */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -240,6 +254,11 @@ h2 {
         flex-direction: column;
         align-items: center;
         padding: 0;
+        display: none; /* piilotettu oletuksena mobiilissa */
+    }
+
+    .navigointipalkki ul.active {
+        display: flex; /* näkyviin kun klikataan menu-toggle */
     }
 
     .navigointipalkki li a {
@@ -259,18 +278,11 @@ h2 {
     }
 
     .menu-toggle {
-        display: block;
-    }
-
-    .navigointipalkki ul {
-        display: none;
-    }
-
-    .navigointipalkki ul.active {
-        display:flex;
+        display: block; /* näkyy mobiilissa */
     }
 }
 
+/* Näytöt alle 480px (pienimmät laitteet) */
 @media (max-width: 480px) {
     .carousel img {
         width: 90px;
@@ -292,35 +304,4 @@ h2 {
     .header-right input[type="text"] {
         width: 100%;
     }
-}
-.carousel .movie:first-child {
-    margin-left: 20px;
-}
-
-.carousel-container {
-    position: relative;
-    margin-top: 40px; /* riittävästi tilaa headerin ja navigointipalkin alle */
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 20 0;
-}
-
-.carousel {
-    display: inline-flex;
-}
-
-.movie { /* karusellin kuvan asetukset*/
-    margin-right: 15px;
-    flex-shrink: 0; /* Estää kuvia kutistumasta, kun tila loppuu */
-    scroll-snap-align: start;
-}
-
-.carousel img { /*karusellikuvan muotoilu*/
-    width: 150px;
-    height: 200px;
-    object-fit: cover; /* Pitää kuvasuhteen siistinä ilman venymistä */
-    border-radius: 8px;
-    display: block;
 }
