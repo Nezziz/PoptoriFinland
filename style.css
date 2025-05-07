@@ -301,12 +301,12 @@ footer {
 }
 
 .carousel-container { /*vaakasuuntaisesti vieritettävä alue*/
-    position: fixed;
+    position: relative;
     width: 100%;
     margin-top: 20px;
     overflow-x: auto;
     white-space: nowrap;
-    scroll-snap-type: mandatory;
+    scroll-snap-type:x mandatory;
 }
 
 .carousel {
