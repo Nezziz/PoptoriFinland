@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poptori Finland</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Pikakorjaus: voit siirtää tämän myös JS-tiedostoon */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .navigointipalkki ul {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            .navigointipalkki ul.active {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -40,18 +70,21 @@
 
     <main class="content"> <!--pääsisältö-->
    
-
+<section>
         <h2>Tervetuloa</h2>
-        <h3>Poptori Finland on BtoB-jakeluorganisaatio, jonka tavoitteena on toimia linkkinä kotimaisten tuottajien ja kaupan välillä.
+        <p>
+        Poptori Finland on BtoB-jakeluorganisaatio, jonka tavoitteena on toimia linkkinä kotimaisten tuottajien ja kaupan välillä.
             Haluamme mahdollistaa pientuottajien pääsyn kaupan hyllylle Hangon ja Utsjoen välillä tule lähemmäs kuluttajaa. 
             Jakelu ei ole uusi asia, mutta me voimme hoitaa sen kustannustehokkaasti.
-            Palveluumme sisältyy halutessanne myös kotisivusuunnittelu, toteutus sekä julkaisu.</h3>
-
+            Palveluumme sisältyy halutessanne myös kotisivusuunnittelu, toteutus sekä julkaisu.
+        </p>
+    </section>
+    <section>
         <h2>Don’t be stuck, Pop-Up in shop</h2>
-    
+    </section>
        
         
-        <div class="carousel-container">  <!-- Vieritettävä kuvasivusto -->
+    <section> class="carousel-container">  <!-- Vieritettävä kuvasivusto -->
             <div class="carousel">
 
                 <a href="https://www.google.com/search?q=poptori+elvis+youtube&sca_esv=bde474a155d49021&rlz=1C1GCEA_enFI1123FI1123&sxsrf=AHTn8zpQRiy1pgRU-GCd5M9sPpw4GSS_qA%3A1746433105996&ei=UXQYaNPMPOLSwPAP8O6pyQM&oq=poptori+elvis&gs_lp=Egxnd3Mtd2l6LXNlcnAiDXBvcHRvcmkgZWx2aXMqAggAMgcQIxiwAxgnMgcQIxiwAxgnMggQABiwAxjvBTIIEAAYsAMY7wUyCBAAGLADGO8FMggQABiwAxjvBUjPC1AAWABwAXgAkAEAmAEAoAEAqgEAuAEByAEAmAIBoAINmAMAiAYBkAYGkgcBMaAHALIHALgHAA&sclient=gws-wiz-serp#fpstate=ive&vld=cid:8bb45fce,vid:0qTkTSA3Bjs,st:0" class="movie">
@@ -113,13 +146,20 @@
                     <img src="movie19.jpg" alt="Movie 19">
                 </a>
                 <!-- Lisää kuvia ja linkkejä täällä -->
-            </div>
+                 </div>
+            </section>
+    
     </main>
 
 
     <footer>
         Sivuston oikeudet omistaa Erkki Kristian Puumalainen
     </footer>
-
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
