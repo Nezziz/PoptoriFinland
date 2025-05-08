@@ -29,13 +29,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: transparent;
+    background-color: white;
     position: fixed; /* kiinnitetty yläpalkki */
     width: 100%;
     top: 0;
-    z-index: 100; /* pysyy muiden elementtien päällä */
+    left: 0;
+    z-index: 1000; /* pysyy muiden elementtien päällä */
     box-sizing: border-box;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* ===========================
@@ -55,7 +56,7 @@ header {
     font-family: 'Arial Black', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    color: #ffffff;
+    color: #430bf8;
     margin: 0;
     text-align: center;
 }
