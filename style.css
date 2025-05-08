@@ -117,11 +117,11 @@ header {
 .navigointipalkki li a,
 .navigointipalkki a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     padding: 12px 10px;
     display: block;
-    border: #3a048c; /* ei näy ilman border-tyyliä */
+    border: #dcd5e7; /* ei näy ilman border-tyyliä */
 }
 
 .navigointipalkki li a:hover {
