@@ -253,11 +253,17 @@ footer {
     }
 
     .navigointipalkki ul {
+        display: none; /* Piilotetaan oletuksena */
         flex-direction: column;
         align-items: center;
         padding: 0;
-        display: none; /* piilotettu oletuksena mobiilissa */
+        position: absolute; /* Asetetaan absoluuttiseksi */
+        top: 60px; /* Varmistetaan, että ei mene headerin päälle */
+        left: 0;
+        right: 0;
+        z-index: 1000; /* Pitää valikon muiden elementtien päällä */
     }
+    
 
     .navigointipalkki ul.active {
         display: flex; /* näkyviin kun klikataan menu-toggle */
@@ -280,15 +286,19 @@ footer {
     }
 
     .menu-toggle {
-        display: block; /* näkyy mobiililaitteilla */
+        display: block; /* Näkyy mobiililaitteilla */
         background-color: #000; /* Taustaväri mustaksi */
         color: white; /* Tekstiväri valkoiseksi */
         padding: 10px 15px; /* Lisää tilaa valikon ympärille */
-        border: none; /* Poistaa mahdolliset reunat */
-        font-size: 24px; /* Tekstin koko (voit säätää tarpeen mukaan) */
+        border: none; /* Poistaa reunat */
+        font-size: 24px; /* Tekstin koko */
         cursor: pointer; /* Käyttäjä tietää, että se on klikattavissa */
-        z-index:1001;
+        z-index: 1001; /* Varmistaa, että menu-toggle on päällimmäisenä */
+        position: absolute; /* Kiinteä sijainti */
+        top: 20px; /* Sijoita oikeaan yläkulmaan */
+        right: 20px; /* Sijoita oikeaan kulmaan */
     }
+    
     
 }
 
