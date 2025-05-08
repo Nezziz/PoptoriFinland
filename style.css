@@ -280,8 +280,15 @@ footer {
     }
 
     .menu-toggle {
-        display: block; /* näkyy mobiilissa */
+        display: block; /* näkyy mobiililaitteilla */
+        background-color: #000; /* Taustaväri mustaksi */
+        color: white; /* Tekstiväri valkoiseksi */
+        padding: 10px 15px; /* Lisää tilaa valikon ympärille */
+        border: none; /* Poistaa mahdolliset reunat */
+        font-size: 24px; /* Tekstin koko (voit säätää tarpeen mukaan) */
+        cursor: pointer; /* Käyttäjä tietää, että se on klikattavissa */
     }
+    
 }
 
 /* Näytöt alle 480px (pienimmät laitteet) */
