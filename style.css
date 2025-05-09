@@ -3,7 +3,7 @@
    =========================== */
    body {
     margin: 0px;
-    padding: 0 30px;
+    padding: 0 20px;
     font-family: Arial, sans-serif;
     background-image: url("https://raw.githubusercontent.com/Nezziz/PoptoriFinland/main/Kuvat/TERAS.jpg"); /* käytä RAW-Linkkiä kuvissa */
     overflow-x: hidden; /* estää vaakasuuntaisen skrollauksen */
@@ -99,7 +99,7 @@ header {
 .navigointipalkki {
     width: 100%;
     position: sticky;
-    top: 120px; /* sijoitus headerin alapuolelle */
+    top: px; /* sijoitus headerin alapuolelle */
     z-index: 99;
     padding: 0 30px;
 }
@@ -121,7 +121,7 @@ header {
     font-weight: bold;
     padding: 12px 10px;
     display: block;
-    border: #dcd5e7; /* ei näy ilman border-tyyliä */
+    border: #050505; /* ei näy ilman border-tyyliä */
 }
 
 .navigointipalkki li a:hover {
@@ -157,7 +157,7 @@ h3 {
 .content {
     border: 4px solid #007BFF;
     margin-top: 120px;
-    padding: 20px;
+    padding: 5px;
     background-color: white;
     overflow-y: auto; /* mahdollistaa kehyksen sisäisen scrollauksen */
     z-index: 1;
