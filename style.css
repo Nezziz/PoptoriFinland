@@ -66,9 +66,9 @@ header {
    =========================== */
 .header-right {
     display: flex;
-    align-items:flex-end;
+    align-items:center;
     gap: 10px;
-    margin-right: 30px;
+    margin-left: auto;
 }
 
 /*.header-right input[type="text"] {
@@ -77,7 +77,7 @@ header {
     border: 1px solid #ccc;
     margin-right: 10px;
 }
-
+*/
 .kirjaudu {
     text-decoration: none;
     color: #102f50;
@@ -89,10 +89,10 @@ header {
 }
 
 .kirjaudu:hover {
-    background-color: #007BFF;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
-*/
+
 
 
 /* ===========================
