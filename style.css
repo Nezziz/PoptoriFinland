@@ -9,7 +9,7 @@
     overflow-x: hidden; /* estää vaakasuuntaisen skrollauksen */
     display: flex; /* mahdollistaa footerin alalaitaan */
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 main.content {
@@ -66,12 +66,12 @@ header {
    =========================== */
 .header-right {
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     gap: 10px;
     margin-right: 30px;
 }
 
-.header-right input[type="text"] {
+/*.header-right input[type="text"] {
     padding: 5px;
     border-radius: 4px;
     border: 1px solid #ccc;
@@ -92,6 +92,8 @@ header {
     background-color: #007BFF;
     color: white;
 }
+*/
+
 
 /* ===========================
    Navigointipalkki (valikko)
@@ -136,6 +138,7 @@ header {
    =========================== */
 h1 {
     font-family: 'Arial Black', sans-serif;
+    font-style: italic;
     font-size: clamp(20px, 5vw, 28px);
     margin: 0;
     color: #ffffff;
