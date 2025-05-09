@@ -146,12 +146,12 @@ h1 {
 }
 
 h2 {
-    color: rgb(226, 226, 251);
+    color: rgb(0, 0, 0);
     font-size: 32px;
     font-style: italic;
     text-align: center;
     font-family: 'Verdana', sans-serif;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 h3 {
